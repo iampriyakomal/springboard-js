@@ -1,0 +1,24 @@
+{
+  "name": "sprintboard-js",
+  "version": "1.0.0",
+  "description": "Infosys Springboard Javascript practice",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iampriyakomal/springboard-js.git"
+  },
+  "author": "Komal Priya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iampriyakomal/springboard-js/issues"
+  },
+  "homepage": "https://github.com/iampriyakomal/springboard-js#readme",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "eslint": "^9.19.0",
+    "globals": "^15.14.0"
+  }
+}
