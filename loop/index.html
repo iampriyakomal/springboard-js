@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking Details</title>
+    <style>
+        div#maincontent {
+            height: 200px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: left;
+            color: #08438E;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        div#heading {
+            text-decoration: bold;
+            text-align: center;
+            margin-top: 80px;
+            width: 600px;
+            border: 1px solid #CEE2FA;
+            text-align: center;
+            color: #08438E;
+            background-color: #CEE2FA;
+            font-family: calibri;
+            font-size: 20;
+            padding: 5px;
+        }
+        h4 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div id="heading">
+            <b>Theatre Drama</b>
+        </div>
+        <div id="maincontent">
+            <h4>Your Ticket Details:</h4>
+            <br>
+            <script>
+                let ticketPrice = 9;
+                let rate = 5;
+                let discountSum = 0;
+                let noOfTicket = 6;
+                let totalAmount = ticketPrice*noOfTicket;
+                
+                for(let i=1; i<=noOfTicket; i++){
+                    let discountAmt=(rate/100)*ticketPrice;
+                    let cost = ticketPrice-discountAmt;
+                    discountSum = discountSum + cost;
+
+
+                    document.write("Ticket for Customer " + i 
+                    + " gets " + rate+"% discount!,Cost is: $"+cost+" <br/>");
+                    rate = rate + 2;
+                }
+                
+                document.write("For "+noOfTicket+" tickets, you need to pay: $"+discountSum +" instead of $"+totalAmount);
+                // document.write("Ticket for Customer 1 gets 5% discount!,Cost is: $<br/>");
+                // document.write("Ticket for Customer 2 gets 7% discount!,Cost is: $<br/>");
+                
+            </script>
+        </div>
+    </center>
+</body>
+</html>
